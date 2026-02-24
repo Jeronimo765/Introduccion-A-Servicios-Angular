@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #1973D2;
+    padding: 22px;
+}
+
+.header h1{
+    color: #F5F8FB;
+    text-align: center;
+    font-size: 25px;
+}
+
+.header p{
+    color: #cdd4dc;
+    text-align: center;
+    font-size: 16px;
+}
+
+.carta {
+    background-color: #F0F5F5;
+}
+
+form {
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    color: #404040;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px ;
+}
+

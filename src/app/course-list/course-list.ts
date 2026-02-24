@@ -1,11 +1,24 @@
 import { Component } from '@angular/core';
+import { CourseService } from '../services/course.service';
+import { Course } from '../models/course.model';
 
-@Component({
+@Component ({
   selector: 'app-course-list',
-  imports: [],
   templateUrl: './course-list.html',
-  styleUrl: './course-list.scss',
 })
-export class CourseList {
+export class CourseListComponent {
+  
+  constructor(public courseService: CourseService) {}
 
+  get courses(): Course[] {
+    return this.courseService.getCourses();
+  }
+
+  toggle(id: number) {
+    this.courseService.toggleCourseStatus(id);
+  }
+
+  delete(id: number) {
+    this.courseService.deleteCourse(id);
+  }
 }
