@@ -6,36 +6,37 @@
   </header>
 
 
-  <section class="carta">
+  <section class="carta-1">
 
 
     <form (ngSubmit)="agregarCurso()">
       <h2>Registrar nuevo curso</h2>
 
-      <input class="form-control" type="text" placeholder="Nombre del curso" [(ngModel)]="nombre" name="nombre"
-        required>
+      <input placeholder="Nombre del curso" [(ngModel)]="nombreCurso" name="nombreCurso">
 
       <input class="form-control" type="number" placeholder="Duración (Horas)" [(ngModel)]="duracion" name="duracion"
         required>
 
-      <div class="campo">
-        <label>Nivel</label>
-        <select class="form-control" [(ngModel)]="nivel" name="nivel" required>
-          <option value="Basico">Básico</option>
-          <option value="Intermedio">Intermedio</option>
-          <option value="Avanzado">Avanzado</option>
-        </select>
-      </div>
 
-      <button class="btn" type="submit">Agregar Curso</button>
+      <select class="form-control" [(ngModel)]="nivel" placeholder="Nivel" name="nivel" required>
 
-      <button type="submit">Agregar Curso</button>
+        <option value="" disabled selected hidden>Nivel</option>
+        <option value="Basico">Básico</option>
+        <option value="Intermedio">Intermedio</option>
+        <option value="Avanzado">Avanzado</option>
+
+      </select>
+
+
+      <button class="boton-azul" type="submit">Agregar Curso</button>
+
+
 
     </form>
   </section>
 
 
-  <section class="carta">
+  <section class="carta-2">
     <h2>Cursos registrados</h2>
 
     <p *ngIf="cursos.length === 0">
@@ -51,6 +52,7 @@
       <span class="medalla" [class.active]="curso.activo" [class.inactive]="!curso.activo">
         {{ curso.activo ? 'Activo' : 'Inactivo' }}
       </span>
+
 
       <div class="actions">
         <button (click)="cambiarEstado(curso.id)">

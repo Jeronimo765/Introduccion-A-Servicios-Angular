@@ -8,13 +8,13 @@ body {
     padding: 22px;
 }
 
-.header h1{
+.header h1 {
     color: #F5F8FB;
     text-align: center;
     font-size: 25px;
 }
 
-.header p{
+.header p {
     color: #cdd4dc;
     text-align: center;
     font-size: 16px;
@@ -24,13 +24,13 @@ body {
     background-color: #F0F5F5;
 }
 
-form {
-  max-width: 550px;
-  margin: 40px auto;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.carta-1 {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 form h2 {
@@ -40,8 +40,90 @@ form h2 {
 }
 
 input {
-    width: 95%;
+    width: 92%;
     padding: 10px;
-    margin: 10px ;
+    margin: 10px;
 }
 
+select {
+    width: 96%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.boton-azul {
+    background-color: #1973D2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 4px;
+    width: 96%;
+}
+
+.carta-2 {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carta-2 h2 {
+    color: #404040;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+p {
+    color: #404040;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.curso-carta {
+    border: 1px solid #baabab;
+    border-radius: 8px;
+}
+
+.curso-carta h3 {
+    color: #404040;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.curso-carta p {
+    color: #404040;
+    font-size: 14px;
+    margin: 10px;
+    text-align: none;
+}
+
+
+
+.class.active {
+    background-color: #C8E6C8;
+    color: #404040;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+
+.medalla {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.active {
+  background-color: #b3dab3; 
+}
+
+.inactive {
+  background-color: #d59d9d; 
+}

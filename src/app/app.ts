@@ -7,18 +7,20 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './app.html',
+  styleUrl: './app.scss'
 })
-export class App {
-  nombreCurso: string =  '';
+export class AppComponent {
+
+  nombreCurso: string = '';
   duracion: number = 0;
-  nivel: string = 'Basico';
+  nivel: string = 'Básico';
 
-  courses: any[] = [];
+  cursos: any[] = [];
 
-  submit() {
+  agregarCurso() {
     if (!this.nombreCurso || !this.duracion) return;
 
-    const newCourse = {
+    const nuevoCurso = {
       id: Date.now(),
       nombre: this.nombreCurso,
       duracion: this.duracion,
@@ -26,21 +28,22 @@ export class App {
       activo: true
     };
 
-    this.courses.push(newCourse);
+    this.cursos.push(nuevoCurso);
 
     this.nombreCurso = '';
     this.duracion = 0;
     this.nivel = 'Basico';
   }
 
-  toggle(id: number) {
-    const course = this.courses.find(c => c.id === id);
-    if (course) {
-      course.activo = !course.activo;
+  cambiarEstado(id: number) {
+    const curso = this.cursos.find(c => c.id === id);
+    if (curso) {
+      curso.activo = !curso.activo;
     }
   }
- 
-  delete(id: number) {
-    this.courses = this.courses.filter(c => c.id !== id)
+
+  eliminarCurso(id: number) {
+    this.cursos = this.cursos.filter(c => c.id !== id);
   }
+
 }
