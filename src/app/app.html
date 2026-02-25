@@ -49,17 +49,19 @@
       <p>Duración: {{ curso.duracion }} horas</p>
       <p>Nivel: {{ curso.nivel }}</p>
 
-      <span class="medalla" [class.active]="curso.activo" [class.inactive]="!curso.activo">
+
+      <span class="botones" [class.active]="curso.activo" [class.inactive]="!curso.activo">
         {{ curso.activo ? 'Activo' : 'Inactivo' }}
       </span>
 
 
-      <div class="actions">
-        <button (click)="cambiarEstado(curso.id)">
+
+      <div class="acciones">
+        <button class="boton-estado" (click)="cambiarEstado(curso.id)">
           {{ curso.activo ? 'Desactivar' : 'Activar' }}
         </button>
 
-        <button (click)="eliminarCurso(curso.id)">
+        <button class="boton-eliminar" (click)="eliminarCurso(curso.id)">
           Eliminar
         </button>
       </div>

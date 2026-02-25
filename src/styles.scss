@@ -85,6 +85,7 @@ p {
 .curso-carta {
     border: 1px solid #baabab;
     border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .curso-carta h3 {
@@ -96,10 +97,9 @@ p {
 .curso-carta p {
     color: #404040;
     font-size: 14px;
-    margin: 10px;
-    text-align: none;
+    gap: 15px;
+    margin-left: 13px;
 }
-
 
 
 .class.active {
@@ -107,23 +107,47 @@ p {
     color: #404040;
     border: none;
     padding: 5px 10px;
-    margin: 10px;
     border-radius: 4px;
 }
 
-
-.medalla {
-  padding: 5px 10px;
-  border-radius: 12px;
-  font-weight: bold;
-  color: white;
-  transition: 0.3s ease;
+.botones {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-weight: none;
+    color: white;
+    margin-left: 10px;
+    margin-top: 80px;
+    font-size: 15px;
 }
 
 .active {
-  background-color: #b3dab3; 
+    background-color: #68cc68;
 }
 
 .inactive {
-  background-color: #d59d9d; 
+    background-color: #f25e5e;
+}
+
+.acciones {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.boton-estado {
+    background-color:#FFAF00;
+    color: #ffffff;              
+    border: none;
+    padding: 5px 10px;          
+    border-radius: 4px;     
+}
+
+.boton-eliminar {
+    background-color: #E65F5A;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
